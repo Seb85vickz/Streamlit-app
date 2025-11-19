@@ -113,6 +113,5 @@ Original file is located at
 # 
 #
 
-!wget -q -O - ipv4.icanhazip.com
 
 !streamlit run app.py & npx localtunnel --port 8501
