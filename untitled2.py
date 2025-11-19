@@ -1,104 +1,104 @@
-# import streamlit as st
-# import math
-# 
-# st.set_page_config(page_title="Streamlit App")
-# 
-# st.sidebar.title("Navigate to")
-# st.sidebar.write("Let's Explore:")
-# app = st.sidebar.radio("",("Calculator", "BMI Calculator", "Area Calculator"))
-# 
-# if app == "Calculator":
-#     st.title("Calculator")
-#     st.write("Work on Basic and interest calculations.")
-# 
-#     with st.container():
-#         col1, col2 = st.columns(2)
-#         num1 = col1.number_input("Enter First Number:")
-#         num2 = col2.number_input("Enter Second Number:")
-# 
-#     operators = st.selectbox(
-#         "Select Operator",
-#         ("Addition", "Subtraction", "Multiplication", "Division", "Simple Interest", "Compound Interest", "Square", "Square Root")
-#     )
-# 
-# 
-#     if st.button("Calculate"):
-#         if operators == "Addition":
-#           result = num1 + num2
-#           st.success(f"The result is {result}")
-#         elif operators == "Subtraction":
-#           result = num1 - num2
-#           st.success(f"The result is {result}")
-#         elif operators == "Multiplication":
-#           result = num1 * num2
-#           st.success(f"The result is {result}")
-#         elif operators == "Division":
-#           result = num1 / num2
-#           st.success(f"The result is {result}")
-#         elif operators == "Simple Interest":
-#           result = (num1 * num2)/100
-#           st.success(f"The result is {result}")
-#         elif operators == "Compound Interest":
-#           result = num1 * (1 + (num2/100))
-#           st.success(f"The result is {result}")
-#         elif operators == "Square":
-#           result = num1 * num1
-#           st.success(f"The result is {result}")
-#         elif operators == "Square Root":
-#           result = math.sqrt(num1)
-#           st.success(f"The result is {result}")
-# 
-# 
-# 
-# 
-# 
-# elif app == "BMI Calculator":
-#     st.title("BMI Calculator")
-#     st.write("Calculate Your Body Mass Index")
-# 
-#     height = st.number_input("Enter Your Height in Meters:")
-#     weight = st.number_input("Enter Your Weight in Kilograms:")
-#     if st.button("Calculate BMI"):
-#         heigh = height/100
-#         bmi = weight / (heigh ** 2)
-#         st.success(f"Your BMI is {bmi}")
-# 
-#         if bmi < 18.5:
-#             st.warning("You are underweight")
-#         elif 18.5 <= bmi < 24.9:
-#             st.success("You are healthy")
-#         elif 25 <= bmi < 29.9:
-#             st.warning("You are overweight")
-#         else:
-#             st.error("You are Obese.")
-# 
-# 
-# elif app == "Area Calculator":
-#     st.title("Area Calculator")
-#     st.write("Calculate the area of different shapes.")
-# 
-#     shape = st.selectbox("Choose", ("Circle", "Rectangle", "Triangle"))
-# 
-#     if shape == "Circle":
-#         radius = st.number_input("Enter Radius:")
-#         if st.button("Calculate Area"):
-#           area = math.pi * (radius ** 2)
-#           st.success(f"The area of the circle is {area}")
-# 
-#     elif shape == "Rectangle":
-#           length = st.number_input("Enter Length:")
-#           width = st.number_input("Enter Width:")
-#           if st.button("Calculate Area"):
-#             area = length * width
-#             st.success(f"The area of the rectangle is {area}")
-# 
-#     elif shape == "Triangle":
-#           base = st.number_input("Enter Base:")
-#           height = st.number_input("Enter Height:")
-#           if st.button("Calculate Area"):
-#             area = 0.5 * base * height
-#             st.success(f"The area of the triangle is {area}")
-# 
-#
+  import streamlit as st
+  import math
+   
+  st.set_page_config(page_title="Streamlit App")
+  
+  st.sidebar.title("Navigate to")
+  st.sidebar.write("Let's Explore:")
+  app = st.sidebar.radio("",("Calculator", "BMI Calculator", "Area Calculator"))
+  
+  if app == "Calculator":
+      st.title("Calculator")
+      st.write("Work on Basic and interest calculations.")
+  
+      with st.container():
+          col1, col2 = st.columns(2)
+          num1 = col1.number_input("Enter First Number:")
+          num2 = col2.number_input("Enter Second Number:")
+  
+      operators = st.selectbox(
+          "Select Operator",
+          ("Addition", "Subtraction", "Multiplication", "Division", "Simple Interest", "Compound Interest", "Square", "Square Root")
+      )
+  
+ 
+      if st.button("Calculate"):
+          if operators == "Addition":
+            result = num1 + num2
+            st.success(f"The result is {result}")
+          elif operators == "Subtraction":
+            result = num1 - num2
+            st.success(f"The result is {result}")
+          elif operators == "Multiplication":
+            result = num1 * num2
+            st.success(f"The result is {result}")
+          elif operators == "Division":
+            result = num1 / num2
+            st.success(f"The result is {result}")
+          elif operators == "Simple Interest":
+            result = (num1 * num2)/100
+            st.success(f"The result is {result}")
+          elif operators == "Compound Interest":
+            result = num1 * (1 + (num2/100))
+            st.success(f"The result is {result}")
+          elif operators == "Square":
+            result = num1 * num1
+            st.success(f"The result is {result}")
+          elif operators == "Square Root":
+            result = math.sqrt(num1)
+            st.success(f"The result is {result}")
+  
+  
+  
+  
+  
+  elif app == "BMI Calculator":
+      st.title("BMI Calculator")
+      st.write("Calculate Your Body Mass Index")
+  
+      height = st.number_input("Enter Your Height in Meters:")
+      weight = st.number_input("Enter Your Weight in Kilograms:")
+      if st.button("Calculate BMI"):
+          heigh = height/100
+          bmi = weight / (heigh ** 2)
+          st.success(f"Your BMI is {bmi}")
+  
+          if bmi < 18.5:
+              st.warning("You are underweight")
+          elif 18.5 <= bmi < 24.9:
+              st.success("You are healthy")
+          elif 25 <= bmi < 29.9:
+              st.warning("You are overweight")
+          else:
+              st.error("You are Obese.")
+  
+  
+  elif app == "Area Calculator":
+      st.title("Area Calculator")
+      st.write("Calculate the area of different shapes.")
+  
+      shape = st.selectbox("Choose", ("Circle", "Rectangle", "Triangle"))
+  
+      if shape == "Circle":
+          radius = st.number_input("Enter Radius:")
+          if st.button("Calculate Area"):
+            area = math.pi * (radius ** 2)
+            st.success(f"The area of the circle is {area}")
+  
+      elif shape == "Rectangle":
+            length = st.number_input("Enter Length:")
+            width = st.number_input("Enter Width:")
+            if st.button("Calculate Area"):
+              area = length * width
+              st.success(f"The area of the rectangle is {area}")
+ 
+      elif shape == "Triangle":
+            base = st.number_input("Enter Base:")
+            height = st.number_input("Enter Height:")
+            if st.button("Calculate Area"):
+              area = 0.5 * base * height
+              st.success(f"The area of the triangle is {area}")
+ 
+
 
 
