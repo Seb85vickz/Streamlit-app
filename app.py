@@ -80,22 +80,22 @@ elif app == "Area Calculator":
     shape = st.selectbox("Choose", ("Circle", "Rectangle", "Triangle"))
 
     if shape == "Circle":
-        radius = st.number_input("Enter Radius:")
-        if st.button("Calculate Area"):
+        radius = st.number_input("Enter the Radius:")
+        if st.button("Calculate the Area"):
           area = math.pi * (radius ** 2)
           st.success(f"The area of the circle is {area}")
 
     elif shape == "Rectangle":
-          length = st.number_input("Enter Length:")
-          width = st.number_input("Enter Width:")
-          if st.button("Calculate Area"):
+          length = st.number_input("Enter the Length:")
+          width = st.number_input("Enter the Width:")
+          if st.button("Calculate the Area"):
             area = length * width
             st.success(f"The area of the rectangle is {area}")
 
     elif shape == "Triangle":
-          base = st.number_input("Enter Base:")
-          height = st.number_input("Enter Height:")
-          if st.button("Calculate Area"):
+          base = st.number_input("Enter the Base:")
+          height = st.number_input("Enter the Height:")
+          if st.button("Calculate the Area"):
             area = 0.5 * base * height
             st.success(f"The area of the triangle is {area}")
 
