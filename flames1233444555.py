@@ -8,6 +8,14 @@ Original file is located at
 """
 
 import streamlit as st
+
+# --- Page Configuration ---
+st.set_page_config(
+    page_title="India Air Quality Analysis",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 a=list(st.text_input("enter first name").lower())
 b=list(st.text_input("enter second name").lower())
 for i in a.copy():
