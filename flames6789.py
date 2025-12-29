@@ -17,7 +17,7 @@ st.set_page_config(page_title="FLAMES | Relationship Predictor", page_icon="‚ù§Ô
 st.markdown("""
     <style>
     .main {
-        background-color: #f0f2f6;
+        background-color: #FFCCCB;
     }
     .stButton>button {
         width: 100%;
