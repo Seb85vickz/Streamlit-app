@@ -46,6 +46,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+
 # --- CORE LOGIC (Place your code here) ---
 def calculate_flames(n1, n2):
     name1 = n1.lower().replace(" ", "")
