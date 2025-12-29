@@ -16,7 +16,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-
 a=list(st.text_input("enter first name").lower())
 b=list(st.text_input("enter second name").lower())
 for i in a.copy():
